@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+
+
+      {% block body %}
+      <!-- end header -->
+            <div class="full_bg">
+      <!-- header inner -->
+         <div class="section">
+            <!-- carousel code -->
+            <div id="banner1" class="carousel slide slider_main">
+               <ol class="carousel-indicators ">
+                  <li data-target="#banner1" data-slide-to="0" class="indicator-li-1">01</li>
+                  <li data-target="#banner1" data-slide-to="1" class="">02</li>
+                  <li data-target="#banner1" data-slide-to="2" class="active">03</li>
+               </ol>
+               <div class="carousel-inner">
+                  <!-- first slide -->
+                  <div class="carousel-item active">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                 <div class="photog">
+                                    <h1>Care early<br>Coronavirus</h1>
+                                    <a target="_blank" class="read_more"  href="{{ url_for('predict') }}" >PREDICT</a>
+                                    <a class="read_more" href="{{ url_for('about') }}" >About Us</a>
+                                    <a target="_blank" class="read_more" href= "{{ url_for('research' ) }}">Research Paper</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- second slide -->
+                  <div class="carousel-item">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                <div class="photog">
+                                    <h1>PREDICT</h1>
+                                    <a class="read_more" href="javascript:void(0)" >PREDICT</a>
+                                    <a class="read_more" href="about.html" >About Us</a>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- third slide -->
+                  <div class="carousel-item">
+                     <div class="carousel-caption cuplle">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-8">
+                                <div class="photog">
+                                 <span class="animate-item animate-3" style=" padding-right: 0.5rem;"
+                                 
+                        
+                                 @media only screen and (min-width: 536px)
+                                  
+                                    
+                                 >Care early</span>
+                                 <span class="animate-item animate-3">Coronavirus</span>
+                                    <a class="read_more" href="DLMODEL.html" >PREDICT</a>
+                                    <a class="read_more" href="about.html" >About Us</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- controls -->
+               <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+               <i class="fa fa-angle-left" aria-hidden="true"></i>
+               <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+               <span class="sr-only">Next</span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- end banner -->
+      <!-- about -->
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                     <h2>About Corona Virus </h2>
+                     <p>
+                        COVID-19 is a highly contagious viral respiratory illness caused by the SARS-CoV-2 virus. It was first identified in December 2019 in Wuhan, China, and has since become a global pandemic. Symptoms can range from mild to severe, including fever, cough, and difficulty breathing. Preventive measures such as wearing masks, social distancing, and vaccination have been crucial in managing its spread
+                     </p>
+                     <a class="read_more" href="about.html">About More</a>
+                  </div>
+                  
+               </div>
+               <div class="col-md-5">
+                  <div class="about_img text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='about.png') }}" alt="#"/></figure>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+     <!-- coronata -->
+      <div class="coronata">
+         <div class="container">
+            <div class="row d_flex grid">
+               <div class="col-md-7">
+                  <div class="coronata_img text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='corona.png') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-5 oder1">
+                  <div class="titlepage text_align_left">
+                     <h2>Symptoms</h2>
+                     <p>
+                        The symptoms of COVID-19 can vary widely and may appear 2 to 14 days after exposure to the SARS-CoV-2 virus. Common symptoms include:
+                        
+                        <ul>
+                           <li>Fever or chills</li>
+                           <li>Cough</li>
+                           <li>Shortness of breath or difficulty breathing</li>
+                           <li>Fatigue</li>
+                           <li>Muscle or body aches</li>
+                        </ul>
+                     </p>
+                     <a class="read_more" href="about.html">About More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end coronata -->
+   
+        <!-- protect -->
+      <div class="protect">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>How to Protect Yourself</h2>
+                     <p>These are the precautions that need to be taken to prevent COVID-19 
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+           <div class="protect_bg">
+         <div class="container">
+             <div class="row">
+               <div class="col-md-12">
+                  <!--  Demos -->
+                  <div class="owl-carousel owl-theme">
+                     <div class="item">
+                        <div class="protect_box text_align_center">
+                          <div class="desktop">
+                             <i><img src="{{ url_for('display_image', filename='pro1.png') }}" alt="#"/></i>
+                           <h3> Wear Mask</h3>
+                           <span> Wearing masks has been recognized as an effective preventive measure to reduce the transmission of COVID-19.</span>
+                          </div>
+                           <a class="read_more" href="protect.html">Read More</a>
+                        </div>
+                     </div>
+                     <div class="item">
+                          <div class="protect_box text_align_center">
+                          <div class="desktop">
+                             <i><img src="{{ url_for('display_image', filename='pro2.png') }}" alt="#"/></i>
+                           <h3> Wash Your Hands</h3>
+                           <span> Washing hands with soap and water helps remove viruses, bacteria, and other germs that may be present on the skin, including the SARS-CoV-2 virus responsible for COVID-19.</span>
+                          </div>
+                           <a class="read_more" href="protect.html">Read More</a>
+                        </div>
+                     </div>
+                     <div class="item">
+                         <div class="protect_box text_align_center">
+                          <div class="desktop">
+                             <i><img src="{{ url_for('display_image', filename='pro3.png') }}" alt="#"/></i>
+                           <h3> Stay at Home</h3>
+                           <span> Staying at home reduces physical contact with others, practicing social distancing.  is an important measure to control the spread of infectious diseases like COVID-19</span>
+                          </div>
+                           <a class="read_more" href="protect.html">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+      </div>
+         </div>
+      </div>
+      <!-- end protect -->
+    <!-- cases -->
+      <div class="cases">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Coronavirus Cases</h2>
+                     <p>COVID-19 can present in various ways, ranging from mild to severe symptoms, or even being asymptomatic in some cases. Below are three different scenarios or cases of COVID-19</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='cases1.png') }}" alt="#"/></figure>
+                      <a class="read_more" href="cases.html">Read More</a>
+                     <div class="nostrud">
+                        <h3>Mild Case:</h3>
+                        <p>In a mild case of COVID-19, an individual may experience mild respiratory symptoms similar to the common cold or flu. Symptoms can include a mild cough, low-grade fever, fatigue, headache, and body aches. Some individuals may also experience a loss of taste or smell. The person might feel unwell but can recover without the need for hospitalization. Mild cases are common and represent the majority of COVID-19 infect</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='cases2.png') }}" alt="#"/></figure>
+                      <a class="read_more" href="cases.html">Read More</a>
+                     <div class="nostrud">
+                        <h3>Severe Case:</h3>
+                        <p>In a severe case of COVID-19, an individual experiences more intense symptoms and may develop pneumonia or acute respiratory distress syndrome (ARDS). Severe cases are more likely to occur in older adults and individuals with underlying health conditions, such as heart disease, diabetes, or compromised immune systems. Symptoms may include high fever, severe cough, shortness of breath, chest pain, confusion, and bluish lips or face. Severe cases require medical attention, and hospitalization may be necessary for supportive care and oxygen the</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='cases3.png') }}" alt="#"/></figure>
+                      <a class="read_more" href="cases.html">Read More</a>
+                     <div class="nostrud">
+                        <h3>Asymptomatic Case:</h3>
+                        <p>In some cases of COVID-19, individuals may be asymptomatic, which means they show no symptoms despite being infected with the virus. Asymptomatic individuals can still spread the virus to others, making them potential carriers of COVID-19 without realizing it. Asymptomatic cases pose challenges in containing the spread of the virus, as infected individuals may unknowingly transmit it to vulnerable populations.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end cases -->
+         
+      <!-- end cases -->
+<!-- update -->
+<div class="update">
+   <div class="cevery_white">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Get Every Update.... </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="cevery_bg">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <form id="colof" class="form_subscri">
+                  <input class="newsl" placeholder="Your Email" type="text" name="Email">
+                  <button class="subsci_btn">Subscribe Now</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+      {% endblock body %}

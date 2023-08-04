@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+
+      {% block styles %}
+      <style>
+         about.titlepage h2::before{
+            position: absolute;
+    content: "";
+    bottom: 0px;
+    background: #ed1c24;
+    width: 93px;
+    height: 11px;
+    left: 0;
+    border-radius: 20px;
+    margin-bottom: 1px;
+         }
+      </style>
+      {% endblock styles %}
+   
+      {% block body %}
+      
+         <div class="about">
+            <div class="container_width">
+               <div class="row d_flex">
+                     <div class="col-md-7">
+                     <div class="titlepage text_align_left">
+                        <h2>About Covido </h2>
+                        <p>we build the web app to predict the Covid -19 using chest x-ray image.
+                        </p>
+                        <h2 style="color: #353D47;font: 33px Poppins,sans-serif;padding: 0px 0px 18px;position: relative;line-height: 40px;font-weight: bold;">
+                     
+                     
+                        Our team: </h3>
+                           <ul style="color: #111;font: 17px Poppins,sans-serif">
+                              <li style="font: Poppins ,sans-serif">M.S.MOHAMMED HUZAIFA</li>
+                              <li style="font: Poppins,sans-serif">M.VIVEK</li>
+                              <li style="font: Poppins,sans-serif">C.TEJ PAVAN</li>
+                           </ul>
+                     
+                        <a class="read_more" href="about.html">About More</a>
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="about_img text_align_center">
+                        <figure><img src="{{ url_for('display_image', filename='about.png') }}" alt="#"/></figure>
+                     </div>
+                  </div>
+               
+               </div>
+            </div>
+         </div>
+         
+      {% endblock body %}
+   

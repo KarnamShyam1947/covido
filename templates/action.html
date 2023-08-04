@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+
+   {% block body %}
+
+    
+    <!-- cases -->
+      <div class="cases">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center ">
+                     <h2>Take Action</h2>
+                     <p>Taking proactive actions is crucial in the fight against COVID-19. Here are three essential actions that individuals and communities can take to mitigate the spread of the virus</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='cases1.png') }}" alt="#"/></figure>
+                     <div class="nostrud">
+                        <h3>Get Vaccinated</h3>
+                        <p>Getting vaccinated against COVID-19 is one of the most effective ways to protect yourself and others from the virus. Vaccines have been developed and authorized for emergency use worldwide. Vaccination helps reduce the risk of severe illness, hospitalization, and death from COVID-19. It also contributes to building community immunity, which is essential for controlling the spread of the virus and ending the pandemic.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='cases2.png') }}" alt="#"/></figure>
+                     <div class="nostrud">
+                        <h3>Practice Preventive Measures</h3>
+                        <p> Wear masks properly, covering your nose and mouth, especially in crowded or indoor settings.Maintain a safe distance (at least 6 feet) from others, particularly in public places.ash hands frequently with soap and water for at least 20 seconds or use hand sanitizer with at least 60% alcohol.Ensure good ventilation in indoor spaces to reduce the concentration of viral particles.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class=" col-md-4">
+                  <div class="latest text_align_center">
+                     <figure><img src="{{ url_for('display_image', filename='cases3.png') }}" alt="#"/></figure>
+                     <div class="nostrud">
+                        <h3>Stay Informed and Follow Guidelines</h3>
+                        <p>Stay informed about the latest COVID-19 updates and guidelines from reputable health organizations and government authorities. Adhere to local public health measures, travel restrictions, and quarantine protocols. Responsible behavior and cooperation with health guidelines are essential in controlling the spread of the virus and protecting vulnerable populations.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      
+   {% endblock body %}
+   

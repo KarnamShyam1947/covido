@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Model Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.jpg') }}" type="image/jpg" />
+    
+</head>
+<body>
+    <div class="full_bg" >
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left" >
+                     <h1 style="color: white;">DL Model Web App </h1>
+                     <input type="text" name="imageUrl" id="image-url" placeholder="Enter image url and HIT ENTER">
+                     
+                     <div class="or-container">
+                        <div class="or-title">OR</div>
+                     </div>
+                     
+                     <div>
+                         <form id="form" enctype="multipart/form-data" method="post">
+                           <label for="imageInput">
+                              <div class="selectBtn">
+                                 select file
+                              </div>
+                           </label>
+
+                           <input accept="image/*" type="file" name="image" id="imageInput">
+
+                           <img id="image"></img>
+
+                           <input type="submit" id="submitBtn" value="Classify">
+                         </form>
+                     </div>
+                     <div class="loader_bg">
+                        <div class="loader"><img src="{{ url_for('display_image', filename='loader2.gif') }}" alt="#"/></div>
+                     </div>
+                     <div id="result"></div>
+                     <script src="{{ url_for('static', filename='js/predict.js') }}"></script>
+                  </div>
+                  
+               </div>
+              
+            </div>
+         </div>
+      </div>
+    </div>
+    
+    
+</body>
+</html>
